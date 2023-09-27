@@ -64,12 +64,18 @@
         }
     },
     "python.languageServer": "Pylance",
-    "python.formatting.autopep8Args": [
-        "--indent-size=4"
-        // "--ignore=E111",
+    "python.formatting.provider": "black",
+    // "python.formatting.autopep8Args": [
+    //     "--indent-size=4"
+    //     // "--ignore=E111",
+    // ],
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "79"
     ],
+    "python.linting.enabled": true,
     "python.linting.flake8Args": [
-        // "--ignore=E111",
+        "--ignore=E501",
     ],
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
@@ -80,7 +86,7 @@
         "**/templates/*": "django-txt",
         "**/requirements{/**,*}.{txt,in}": "pip-requirements"
     },
-    "workbench.iconTheme": "Monokai Classic Icons",
+    "workbench.iconTheme": "material-icon-theme",
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
