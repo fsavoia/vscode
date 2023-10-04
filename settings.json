@@ -48,7 +48,7 @@
     "editor.suggest.preview": true,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.snippetSuggestions": "top",
-    // Python
+    "python.analysis.typeCheckingMode": "strict",
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
         "--errors-only",
@@ -98,5 +98,11 @@
     "snyk.advanced.cliPath": "/Users/fsavoia/Library/Application Support/snyk-ls/snyk-macos",
     "python.defaultInterpreterPath": "python3",
     "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
-    "editor.lineNumbers": "relative"
+    "editor.lineNumbers": "relative",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }
