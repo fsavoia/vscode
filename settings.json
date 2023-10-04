@@ -65,10 +65,6 @@
     },
     "python.languageServer": "Pylance",
     "python.formatting.provider": "black",
-    // "python.formatting.autopep8Args": [
-    //     "--indent-size=4"
-    //     // "--ignore=E111",
-    // ],
     "python.formatting.blackArgs": [
         "--line-length",
         "79"
@@ -96,9 +92,11 @@
     "terminal.integrated.fontSize": 13,
     "snyk.yesWelcomeNotification": false,
     "snyk.trustedFolders": [
-        "/home/fsavoia/eyeinspect-ccrit-extension"
+        "/home/fsavoia/eyeinspect-ccrit-extension",
+        "/Users/fsavoia/Dev/posts-api"
     ],
     "snyk.advanced.cliPath": "/Users/fsavoia/Library/Application Support/snyk-ls/snyk-macos",
     "python.defaultInterpreterPath": "python3",
-    "workbench.colorTheme": "OM Theme (Default Dracula Italic)"
+    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+    "editor.lineNumbers": "relative"
 }
