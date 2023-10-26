@@ -74,7 +74,7 @@
         "--ignore=E501",
     ],
     "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true,
+    "python.linting.mypy-type-checker": true,
     "python.testing.unittestEnabled": false,
     "files.associations": {
         "*.html": "html",
