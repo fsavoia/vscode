@@ -63,6 +63,7 @@
             "source.organizeImports": true
         }
     },
+    "isort.args":["--profile", "black"],
     "python.languageServer": "Pylance",
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
