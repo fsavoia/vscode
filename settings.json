@@ -37,7 +37,8 @@
     "code-runner.runInTerminal": true,
     "code-runner.preserveFocus": false,
     "code-runner.executorMap": {
-        "python": "clear && ./venv/bin/python"
+        "python": "clear && ./venv/bin/python",
+        "sqlite": "sqlite3 /opt/data/database.db <"
     },
     "yaml.validate": false,
     "security.workspace.trust.untrustedFiles": "open",
@@ -56,12 +57,12 @@
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
         }
     },
     "isort.args": [
         "--profile",
-        "black"
+        "black",
     ],
     "python.languageServer": "Pylance",
     "black-formatter.args": [
@@ -79,9 +80,7 @@
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
-    "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "editor.fontSize": 13,
     "snyk.yesWelcomeNotification": false,
     "snyk.trustedFolders": [
         "/home/fsavoia/eyeinspect-ccrit-extension",
@@ -89,26 +88,69 @@
     ],
     "snyk.advanced.cliPath": "/Users/fsavoia/Library/Application Support/snyk-ls/snyk-macos",
     "python.defaultInterpreterPath": "python3",
-    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
-    "editor.lineNumbers": "relative",
+    // "editor.lineNumbers": "relative",
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
         "markdown": true,
-        "scminput": false
+        "scminput": false,
+        "python": false
     },
     "cSpell.userWords": [
+        "apscheduler",
+        "colorlog",
         "cprint",
         "DESCRITPTION",
+        "dotenv",
+        "dundie",
+        "dynaconf",
+        "fastapi",
+        "forcelist",
+        "Geldropseweg",
         "hrules",
+        "levelname",
+        "metavars",
         "prettytable",
+        "pydantic",
         "rstuf",
         "Savoia",
+        "sqlmodel",
         "termcolor",
-        "Terrafriend"
+        "Terrafriend",
+        "typer",
+        "upserv"
     ],
     "explorer.confirmDelete": false,
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.copyOnSelection": true,
-    "workbench.sideBar.location": "right"
+    "workbench.colorTheme": "Dracula At Night",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Cascadia Code",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "constant",
+                    "emphasis",
+                    "entity",
+                    "invalid",
+                    "keyword",
+                    "markup",
+                    "meta",
+                    "storage",
+                    // "string",
+                    "strong",
+                    "support",
+                    "variable"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font"
 }
