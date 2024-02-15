@@ -1,5 +1,31 @@
 {
-    "workbench.startupEditor": "none",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.lineHeight": 1.8,
+    "editor.rulers": [
+        79,
+    ],
+    "apc.electron": {
+        "trafficLightPosition": {
+            "x": 11,
+            "y": 10
+        },
+        "backgroundColor": "rgba(255, 255, 255, .1)",
+        "vibrancy": "sidebar",
+        "transparent": true,
+        "visualEffectState": "active",
+        "titleBarStyle": "hidden",
+        "frame": false
+    },
+    "apc.header": {
+        "height": 36,
+        "fontSize": 14,
+    },
+    "apc.listRow": {
+        "height": 24,
+        "fontSize": 14.5
+    },
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
     "json.schemas": [],
     "yaml.customTags": [
         "!And",
@@ -37,8 +63,8 @@
     "code-runner.runInTerminal": true,
     "code-runner.preserveFocus": false,
     "code-runner.executorMap": {
-        "python": "clear && ./venv/bin/python",
-        "sqlite": "sqlite3 /opt/data/database.db <"
+        "python": "clear && python3",
+        // "sqlite": "sqlite3 /opt/data/database.db <"
     },
     "yaml.validate": false,
     "security.workspace.trust.untrustedFiles": "open",
@@ -50,15 +76,24 @@
     "editor.acceptSuggestionOnEnter": "on",
     "editor.snippetSuggestions": "top",
     "python.analysis.typeCheckingMode": "basic",
+    "files.exclude": {
+        "**\/CVS": true,
+        "**\/.DS_Store": true,
+        "**\/.hg": true,
+        "**\/.svn": true,
+        "**\/.git": true,
+        ".vscode": true
+        // "node_modules": true
+    },
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
-        // "editor.codeActionsOnSave": {
-        //     "source.organizeImports": "explicit"
-        // }
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
     },
     "isort.args": [
         "--profile",
@@ -76,18 +111,13 @@
         "**/templates/*": "django-txt",
         "**/requirements{/**,*}.{txt,in}": "pip-requirements"
     },
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "symbols",
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "snyk.yesWelcomeNotification": false,
-    "snyk.trustedFolders": [
-        "/home/fsavoia/eyeinspect-ccrit-extension",
-        "/Users/fsavoia/Dev/posts-api"
-    ],
-    "snyk.advanced.cliPath": "/Users/fsavoia/Library/Application Support/snyk-ls/snyk-macos",
-    "python.defaultInterpreterPath": "python3",
+    "cSpell.language": "en,pt",
+    // "python.defaultInterpreterPath": "python3",
     // "editor.lineNumbers": "relative",
     "github.copilot.enable": {
         "*": true,
@@ -97,61 +127,81 @@
         "python": false
     },
     "cSpell.userWords": [
+        "aiofiles",
         "apscheduler",
+        "ARTIFACTVERSION",
+        "autouse",
+        "capsys",
         "colorlog",
+        "conds",
         "cprint",
+        "DEPLOYERTYPE",
         "DESCRITPTION",
         "dotenv",
         "dundie",
         "dynaconf",
+        "eyeinspect",
         "fastapi",
         "forcelist",
+        "forescout",
+        "freezegun",
         "Geldropseweg",
         "hrules",
         "levelname",
         "metavars",
+        "mydatetime",
+        "noexec",
+        "poolclass",
         "prettytable",
+        "Publised",
         "pydantic",
         "rstuf",
         "Savoia",
+        "sessionmaker",
+        "snapshotname",
+        "sqlalchemy",
         "sqlmodel",
         "termcolor",
         "Terrafriend",
         "typer",
-        "upserv"
+        "upserv",
+        "usefixtures"
     ],
     "explorer.confirmDelete": false,
-    "terminal.integrated.fontSize": 13.5,
     "terminal.integrated.copyOnSelection": true,
-    "workbench.colorTheme": "Dracula At Night",
+    "workbench.colorTheme": "Dracula",
     "editor.minimap.enabled": false,
-    "editor.fontSize": 13.5,
+    "editor.fontSize": 14,
     "editor.fontFamily": "Cascadia Code",
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "comment",
-                    "constant",
-                    "emphasis",
-                    "entity",
-                    "invalid",
-                    "keyword",
-                    "markup",
-                    "meta",
-                    "storage",
-                    // "string",
-                    "strong",
-                    "support",
-                    "variable"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            }
-        ]
-    },
+    // "editor.tokenColorCustomizations": {
+    //     "textMateRules": [
+    //         {
+    //             "scope": [
+    //                 "comment",
+    //                 "constant",
+    //                 "emphasis",
+    //                 "entity",
+    //                 "invalid",
+    //                 "keyword",
+    //                 "markup",
+    //                 "meta",
+    //                 "storage",
+    //                 // "string",
+    //                 "strong",
+    //                 "support",
+    //                 "variable"
+    //             ],
+    //             "settings": {
+    //                 "fontStyle": "italic"
+    //             }
+    //         }
+    //     ]
+    // },
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font",
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "terminal.integrated.fontSize": 14.5,
+    "symbols.hidesExplorerArrows": false,
+    "update.mode": "manual",
 }
