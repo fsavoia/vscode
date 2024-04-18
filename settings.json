@@ -29,6 +29,7 @@
     "terminal.integrated.fontSize": 12.5,
     "editor.fontSize": 12,
     "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "json.schemas": [],
     "yaml.customTags": [
         "!And",
